@@ -1,0 +1,71 @@
+/*- ==========================================================================
+  975px Grid 
+  ========================================================================== */
+
+/* Breakpoint Variables */
+
+$break-xsmall: 20em; /*320px*/
+$break-small: 37.5em; /*600px*/
+$break-medium: 48em; /*768px*/
+$break-large: 64em; /*1024px*/
+$break-xlarge: 75em; /*1200px*/
+
+.row {
+	//border: 1px solid red;
+ 	width: auto; 
+ 	max-width: none; 
+ 	min-width: 0; 
+ 	margin: 0;
+ 	padding: 37px 0; 	
+}
+
+/* Nicolas Gallagher's micro clearfix */
+.group { *zoom: 1; }
+.group:before, .group:after { content: " "; display: table; }
+.group:after { clear: both; }
+
+.col > div {
+	padding: 0 1em;
+}
+.container {
+	//border: 1px solid blue;
+	max-width: 975px;
+	margin: 0 auto;
+}
+.three {
+	width: 31.2820512%; /*305px*/
+	float: left;	
+	margin-left: 1.53846153%; /*15px*/	
+}
+.four {
+	width: 23.07692307%; /*225px*/
+	float: left;
+	margin-left: 1.53846153%; /*15px*/	
+	@media screen and (max-width: $break-small) {			
+		width: 48%;			
+	}
+	@media screen and (max-width: $break-xsmall) {
+		width: 100%;		
+	}
+}
+.six {
+	width: 14.87179847%; /*145px*/
+	float: left;
+	margin-left: 1.53846153%; /*15px*/		
+}
+.twelve {
+	width: 100%;
+}
+
+
+/* Centered */
+
+.two-centered {
+	width: 50%; /*465px*/
+	margin: 0 auto; 		
+}
+.three-centered {
+	width: 31.2820512%; /*305px*/	
+	margin: 0 auto; /*15px*/		
+}
+

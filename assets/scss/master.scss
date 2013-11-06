@@ -1,0 +1,48 @@
+/**
+ * Master Stylesheet
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ *
+ * @tag This is a tag named 'tag'
+ *
+ * @todo This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */
+ 
+/* ==========================================================================
+   Media Queries 
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Import base, form, typography and functions scss 
+   ========================================================================== */
+
+@import "global/reset";   
+@import "global/base";
+@import "global/font-icons";
+@import "components/functions";
+@import "global/flexslider";
+@import "components/form";
+@import "components/button";
+@import "components/animations";
+
+
+/* ==========================================================================
+   Style in General
+   ========================================================================== */
+
+@import "global/grid";   
+@import "style";
+//@import "max-600";
+//@import "min-600";
+//@import "max-768";
+//@import "min-768";
+//@import "min-940";
+

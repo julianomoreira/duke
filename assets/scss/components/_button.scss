@@ -1,0 +1,14 @@
+/*- ==========================================================================
+  Button 
+  ========================================================================== */
+
+  .button {
+	background-color: white(.25);
+	padding: 15px;
+	display: inline-block;
+	margin: 0 auto;
+	text-decoration: none;	
+	width: auto;
+	color: #fff;
+	@include roundcorners(4px);
+}
