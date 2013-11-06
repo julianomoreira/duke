@@ -23,3 +23,5 @@ SMACSS is a methodology used to reduce depth of applicability or the number of g
 * use classes and child selectors
 * use cascading for themes and don't change class names
 * don't use IDs as it'll create specificity complexity
+
+### SASS Structure
