@@ -4,7 +4,7 @@ This is website was created for the team on the East Coast, Growth Stark, as par
 
 ## Coding Best Practice
 
-This site was coded using SMACSS and BEM methodology of work.
+This site was coded using SMACSS, OOCSS and BEM methodology.
 
 ### BEM
 
