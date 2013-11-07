@@ -10,13 +10,12 @@
 		
 		<title>
 			
-				 Growth Stark Challenge | UI/UX | Designer And Developer of the Web
+				 Duke Decks | Growth Stark Challenge
 
 						
 		</title> 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
-
-		<title>Juliano Moreira Dasilva | UI/UX | Designer And Developer of the Web</title>
+		
 		
 	    <meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -26,6 +25,7 @@
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />		
 
 		<link rel="stylesheet" type="text/css" href="assets/css/master.css" />
+		<link rel="stylesheet" href="assets/css/responsive-nav.css">
 		
 
 		<!-- scripts (if possible place these scripts at the bottom) -->
@@ -88,22 +88,29 @@
 				</ul>			
 			</nav>
 					
-			<nav class="main-header__nav--mobile">		
-				<div class="logo">
-					<a href="#">
-						<img src="assets/images/logo-1x.png" class="" alt="Duke" title="Duke" />
-					</a>			
-				</div>			
-				<a href="#menu" id="menu-button" class="menu">
-					<div class="bar bar1"></div>
-					<div class="bar bar2"></div>
-					<div class="bar bar3"></div>
-				</a>			
-			</nav>
+			<div role="navigation" id="nav" class="nav-collapse">
+		      <ul>
+		        <li class="active"><a href="#">Home</a></li>
+		        <li><a href="#">Shop</a></li>
+		        <li><a href="#">Locations</a></li>
+		        <li><a href="#">Blog</a></li>
+		        <li class="login"><a href="#">Login</a></li>
+				<li class="cart"><a href="#">Cart</a></li>
+				<li class="search"><a href="#">Search</a></li>
+		      </ul>
+		    </div>    
+		    
+			<div class="main-header__nav--mobile group">
+				<a href="#" class="main-header__logo--mobile">
+					<img src="assets/images/logo-1x.png" class="" alt="Duke" title="Duke" />	
+				</a>
+
+		    	<a href="#nav" id="toggle">Menu</a>
+		    </div>
 
 		</div>	<!-- b-main-header__nav -->			
 
-		<div id="_main-slider" class="main-slider">
+		<div id="main-slider" class="main-slider">
 			<ul class="slides clearfix">
 				<li class="main-slider__offer-one offer">									
 					
@@ -112,7 +119,7 @@
 						<!-- <img src="assets/images/offer-one.jpg" alt="" /> -->
 				
 				</li>
-	<!-- 			<li class="main-slider__offer-two offer">									
+				<li class="main-slider__offer-two offer">									
 					
 						<h1>put your real tricks headline with the value proposition right here</h1>
 						<p class="text-center main-slider__offer-one-button "><a href="" class="button text-center">Read More</a></p>					
@@ -123,7 +130,7 @@
 						<h1>put your real tricks headline with the value proposition right here</h1>
 						<p class="text-center main-slider__offer-one-button "><a href="" class="button text-center">Read More</a></p>					
 				
-				</li>	 -->		
+				</li>			
 			</ul>
 		</div>
 
@@ -142,7 +149,7 @@
 <div class="row group">
 
 <div class="twelve col">
-	<div class="craft-newsletter col two-centered">
+	<div class="craft-newsletter col four-centered">
 		<h3 class="text-center">Decks designed with your moves in mind</h3>
 		<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lacus aliquet, tincidunt leo quis, blandit lectus. In vel purus et ligula blandit commodo nec ornare sem. Proin suscipit libero id odio varius porta. Mauris sit amet ipsum pretium nisl tincidunt pulvinar.</p>
 		
@@ -152,7 +159,7 @@
 					<input type="text" />
 				</li>
 				<li>
-					<input type="submit" value="submit" />
+					<input type="submit" value="Sign Up!" />
 				</li>
 			</ul>
 		</div>
@@ -341,7 +348,7 @@
 
 <div class="container">
 
-<div class="col two-centered social-proof__leading-headline">
+<div class="col four-centered social-proof__leading-headline">
 	<h3 class="text-center">Decks designed with your moves in mind</h3>
 	<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac lacus aliquet, tincidunt leo quis, blandit lectus. In vel purus et ligula blandit commodo nec ornare sem. Proin suscipit libero id odio varius porta. Mauris sit amet ipsum pretium nisl tincidunt pulvinar.</p>
 </div>
@@ -459,6 +466,7 @@
 <script src="/assets/js/jquery.flexslider.js"></script>				
 <script src="/assets/js/picturefill.js"></script>
 <script src="/assets/js/modernizr-latest.min.js"></script>					
+<script src="/assets/js/responsive-nav.min.js"></script>
 
 <script type="text/javascript">
   $(window).load(function() {
@@ -471,6 +479,9 @@
   });
 </script>
 
-
+	<script>
+		//var nav = responsiveNav(".nav-collapse");
+      var navigation = responsiveNav("#nav", {customToggle: "#toggle"});
+	</script>
 	</body>
 </html>

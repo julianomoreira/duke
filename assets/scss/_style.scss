@@ -72,7 +72,10 @@ a:focus { color: #2795b6; }
 	// top: 10px;
 	// left: 10px;
 }	
-.main-header__nav--desktop  {
+.main-header__nav--desktop  {	
+	@media screen and (max-width: $break-small) {
+		display: none;
+	}
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -103,25 +106,69 @@ a:focus { color: #2795b6; }
 		}
 	}
 }
+.nav-collapse {	
+	display: none;
+	@media screen and (max-width: $break-small) {
+		display: block;
+	}
+	background-color: #2d242a;
+	ul {
+		li {
+			padding: 1em 1em;
+			border-bottom: 1px solid white(.15);
+			a {
+				color: #fff;
+				text-transform: uppercase;
+				text-decoration: none;
+				display: block;
+			}			
+		}
+	}
+}
 .main-header__nav--mobile {
 	display: none;
+		@media screen and (max-width: $break-small) {
+		display: block;
+	}
+	border-bottom: 1px solid white(.25);
+	background-color: #2d242a;	
+	.main-header__logo--mobile {
+		display: block;
+		float: left;
+		margin: 1em 0 0 1em;
+	}
+	#toggle {	
+		background: transparent url(../images/icon-menu-@1x.png) no-repeat 50% 33%;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		display: block;
+		width: 37px;
+		height: 35px;
+		float: right;	
+		margin: 1em 1em 1em 0;
+		text-indent: -9999px;
+		overflow: hidden;	
+	}
+
 }
+
 
 /* Slider */
 
 .main-slider {
 	//max-width: 975px;
 	//margin: 0 auto;
-	.offer {
-		border: 1px solid red;
+	.offer {		
 		position: relative;	
 		//background: #453841 url(../images/offer-one.jpg) center center no-repeat;
 		height: 460px;	
 	}
 }
 
-.main-slider__offer-one {	
-	border: 1px solid red;
+.main-slider__offer-one {		
 	position: relative;	
 	background: #453841 url(../images/offer-one.jpg) center center no-repeat;
 	height: 460px;
@@ -164,6 +211,9 @@ a:focus { color: #2795b6; }
 /* Social */
 
 .social {
+	@media screen and (max-width: $break-small) {
+		display: none;
+	} 
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -217,6 +267,8 @@ a:focus { color: #2795b6; }
 			}
 			input[type="submit"] {
 				margin: 0;
+				background-color: #619159;
+				border: none;
 			}
 			&:first-child {
 				width: 75%;
