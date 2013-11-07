@@ -165,13 +165,16 @@ a:focus { color: #2795b6; }
 		position: relative;	
 		//background: #453841 url(../images/offer-one.jpg) center center no-repeat;
 		height: 460px;	
+		@media screen and (max-width: $break-medium) {					
+			height: 320px;			
+		}
 	}
 }
 
 .main-slider__offer-one {		
 	position: relative;	
-	background: #453841 url(../images/offer-one.jpg) center center no-repeat;
-	height: 460px;
+	background: #453841 url(../images/offer-one.jpg) center center no-repeat;	
+	
 	> h1 {
 		color: #fff;
 		font-family: $refrigerator;
@@ -182,7 +185,9 @@ a:focus { color: #2795b6; }
 		padding: 150px 0 0 0;
 		text-align: center;			
 		@media screen and (max-width: $break-medium) {			
-			width: auto;			
+			width: auto;
+			padding: 50px 1em 0 1em;						
+			font-size: 44px;
 		}
 	}	
 	.offer {
@@ -294,6 +299,9 @@ a:focus { color: #2795b6; }
 	}
 }
 .product-list {
+	@media screen and (max-width: $break-medium) {
+		padding: 0 .25em;
+	}
 	//border: 1px solid red;
 	li {
 		margin-bottom: 37px;
@@ -378,6 +386,9 @@ a:focus { color: #2795b6; }
 }
 .social-proof__skaters {
 	padding-top: 37px;
+	@media screen and (max-width: $break-medium) {
+		padding: 0 .25em;
+	}
 }
 .social-proof__skaters__dude {	
 	margin-bottom: .5em;
@@ -408,7 +419,10 @@ a:focus { color: #2795b6; }
 /* Footer */
 
 .footer {	
-	background-color: #58344d;	
+	background-color: #58344d;
+	@media screen and (max-width: $break-medium) {
+		padding: 27px .25em 10px .25em;
+	}	
 	p {
 		color: #cfadc5;
 		font-size: 13px;

@@ -2515,11 +2515,15 @@ a:focus {
   position: relative;
   height: 460px;
 }
+@media screen and (max-width: 48em) {
+  .main-slider .offer {
+    height: 320px;
+  }
+}
 
 .main-slider__offer-one {
   position: relative;
   background: #453841 url(../images/offer-one.jpg) center center no-repeat;
-  height: 460px;
 }
 .main-slider__offer-one > h1 {
   color: #fff;
@@ -2534,6 +2538,8 @@ a:focus {
 @media screen and (max-width: 48em) {
   .main-slider__offer-one > h1 {
     width: auto;
+    padding: 50px 1em 0 1em;
+    font-size: 44px;
   }
 }
 
@@ -2630,6 +2636,11 @@ a:focus {
   /*15px*/
 }
 
+@media screen and (max-width: 48em) {
+  .product-list {
+    padding: 0 .25em;
+  }
+}
 .product-list li {
   margin-bottom: 37px;
 }
@@ -2725,6 +2736,11 @@ a:focus {
 .social-proof__skaters {
   padding-top: 37px;
 }
+@media screen and (max-width: 48em) {
+  .social-proof__skaters {
+    padding: 0 .25em;
+  }
+}
 
 .social-proof__skaters__dude {
   margin-bottom: .5em;
@@ -2753,6 +2769,11 @@ a:focus {
 /* Footer */
 .footer {
   background-color: #58344d;
+}
+@media screen and (max-width: 48em) {
+  .footer {
+    padding: 27px .25em 10px .25em;
+  }
 }
 .footer p {
   color: #cfadc5;
