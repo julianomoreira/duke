@@ -45,13 +45,15 @@ input[placeholder] {
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	color: rgba(0,0,0,.25);
 }
-
-.contact-form {
-	.error {
-		color: red;
-		font-weight: bold;
-	}
-	.drop-down {		
-		margin: .25em 0;
-	}
+input::-webkit-input-placeholder {
+	color: black(.75);	
+}
+input::-moz-placeholder {
+	color: black(.75);
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: black(.75);
+}
+input:-ms-input-placeholder { 
+	color: black(.75);
 }

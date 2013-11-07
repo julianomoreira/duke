@@ -42,7 +42,9 @@ $break-xlarge: 75em; /*1200px*/
 	float: left;
 	margin-left: 1.53846153%; /*15px*/	
 	@media screen and (max-width: $break-small) {			
-		width: 48%;			
+		width: 100%;			
+		margin: 0;
+		float: none;
 	}
 	@media screen and (max-width: $break-xsmall) {
 		width: 100%;		
